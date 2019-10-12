@@ -7,6 +7,8 @@ import tensorflow as tf
 import numpy as np
 from keras import models
 
+from config import Logger
+
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 
@@ -91,6 +93,7 @@ class Predict(ShareInstance):
             if len(position) == 0:
                 return result
             result = position
+            Logger.info('识别结果: %s' % result)
         except:
             pass
         return result

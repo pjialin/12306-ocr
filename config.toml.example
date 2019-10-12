@@ -1,0 +1,6 @@
+[web]
+host = "0.0.0.0"
+port = 8082
+
+[ocr]
+image_model_url = "https://public-1251251698.cos.ap-beijing.myqcloud.com/12306.image.model.h5"

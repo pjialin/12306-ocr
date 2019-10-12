@@ -3,6 +3,7 @@ import base64
 from sanic import Sanic
 from sanic.response import json
 
+from config import Config
 from ocr.ml_predict import Predict
 
 app = Sanic()
@@ -10,7 +11,7 @@ app = Sanic()
 
 class Web:
     async def run(self):
-        await app.create_server(return_asyncio_server=True, host='0.0.0.0')
+        await app.create_server(return_asyncio_server=True, **Config.WEB)
 
 
 @app.post('/check')
