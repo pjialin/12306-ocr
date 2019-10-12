@@ -2,6 +2,7 @@
 
 ## 使用
 需要运行在 python 3.6 以上版本
+
 **1. 安装依赖**
 ```bash
 git clone https://github.com/pjialin/12306-ocr
