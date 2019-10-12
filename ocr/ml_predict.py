@@ -112,5 +112,5 @@ class Predict(ShareInstance):
 
 if __name__ == '__main__':
     for i in range(10):
-        with open('a.jpg', 'r') as f:
+        with open('test.jpg', 'r') as f:
             print(Predict.share().get_coordinate(f.buffer.read()))

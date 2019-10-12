@@ -8,13 +8,10 @@ WORKDIR /code
 COPY requirements.txt .
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends gcc python-dev libglib2.0-0 \
+    && apt-get install -y --no-install-recommends gcc python-dev libglib2.0-0 libsm6 libxext6 libxrender-dev \
     && rm -rf /var/lib/apt/lists/* \
     && pip install --no-cache-dir -r requirements.txt \
     && apt-get purge -y --auto-remove gcc python-dev
-
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends libsm6 libxext6 libxrender-dev
 
 COPY . .
 
