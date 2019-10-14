@@ -10,9 +10,7 @@ from web import Web
 
 def main():
     model_file_check();
-    loop = asyncio.get_event_loop()
-    asyncio.ensure_future(Web().run())
-    loop.run_forever()
+    Web().run()
 
 
 def model_file_check():
