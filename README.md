@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 **2. 配置程序**
 ```bash
-cp env.py.example env.py
+cp config.toml.example config.toml
 ```
 **3. 运行程序**
 ```bash
