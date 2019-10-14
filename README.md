@@ -2,6 +2,7 @@
 
 ## 使用
 需要运行在 python 3.6 以上版本
+
 **1. 安装依赖**
 ```bash
 git clone https://github.com/pjialin/12306-ocr
@@ -10,7 +11,7 @@ pip install -r requirements.txt
 ```
 **2. 配置程序**
 ```bash
-cp env.py.example env.py
+cp config.toml.example config.toml
 ```
 **3. 运行程序**
 ```bash
