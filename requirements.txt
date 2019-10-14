@@ -1,3 +1,4 @@
+-i http://mirrors.aliyun.com/pypi/simple/  --trusted-host mirrors.aliyun.com
 absl-py==0.8.0
 aiofiles==0.4.0
 astor==0.8.0
