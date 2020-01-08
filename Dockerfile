@@ -14,6 +14,7 @@ RUN apt-get update \
     && apt-get purge -y --auto-remove gcc python-dev
 
 COPY . .
+COPY config.toml.example config.toml
 
 EXPOSE 8000
 

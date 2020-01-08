@@ -14,11 +14,13 @@ class Config:
 
     PROJECT_DIR = os.path.abspath(__file__ + '/../') + '/'
     CONFIG_FILE = PROJECT_DIR + 'config.toml'
-    IMAGE_MODEL_FILE = PROJECT_DIR + 'ocr/12306.image.model.h5'
+    IMAGE_MODEL_FILE = PROJECT_DIR + 'ocr/image.model.h5'
+    TEXT_MODEL_FILE = PROJECT_DIR + 'ocr/text.model.h5'
+    TEXTS_FILE = PROJECT_DIR + 'ocr/texts.txt'
 
     WEB = {
         'host': '0.0.0.0',
-        'port': 8082
+        'port': 8000
     }
     OCR = {
     }
