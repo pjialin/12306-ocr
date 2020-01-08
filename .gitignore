@@ -4,4 +4,3 @@ venv
 __pycache__
 config.toml
 docker-compose.yml
-ocr/12306.image.model.h5
