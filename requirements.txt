@@ -26,7 +26,7 @@ MarkupSafe==1.1.1
 multidict==4.5.2
 numpy==1.16.4
 opencv-python==4.1.1.26
-protobuf==3.9.1
+protobuf==3.15.0
 PyYAML==5.1.2
 requests==2.22.0
 requests-async==0.5.0
